@@ -1,0 +1,43 @@
+:root {
+  --ink: #17221f;
+  --muted: #67726d;
+  --paper: #f5f6f0;
+  --accent: #ef694e;
+  --line: #dce2d9;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--paper); }
+a { color: inherit; text-decoration: none; }
+.site-header, footer { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: auto; padding: 28px 32px; }
+.logo { font-weight: 800; font-size: 1.25rem; letter-spacing: -.06em; }
+.logo span { color: var(--accent); }
+nav { display: flex; gap: 28px; color: var(--muted); font-size: .9rem; }
+nav a:hover, footer a:hover { color: var(--accent); }
+.hero { min-height: 72vh; max-width: 1180px; margin: auto; padding: 10vh 32px 12vh; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 6vw; }
+.eyebrow { margin: 0 0 20px; color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 800; }
+h1 { max-width: 680px; margin: 0; font-size: clamp(3.5rem, 8vw, 7rem); line-height: .93; letter-spacing: -.08em; }
+h1 em { color: var(--accent); font-family: Georgia, serif; font-weight: 400; letter-spacing: -.09em; }
+.lede { max-width: 450px; margin: 30px 0 34px; color: var(--muted); font-size: 1.1rem; line-height: 1.65; }
+.button { display: inline-flex; align-items: center; gap: 18px; padding: 15px 20px; border-radius: 999px; background: var(--ink); color: white; font-weight: 700; transition: transform .2s, background .2s; }
+.button:hover { transform: translateY(-2px); background: var(--accent); }
+.hero-art { position: relative; width: min(42vw, 430px); aspect-ratio: 1; justify-self: center; }
+.orb { position: absolute; border-radius: 50%; }
+.orb-large { inset: 16%; background: radial-gradient(circle at 35% 30%, #f7b18c, var(--accent) 60%, #b73d36); box-shadow: 20px 30px 50px #d9c8b8; }
+.orb-small { width: 20%; height: 20%; top: 10%; right: 12%; background: #f5c2a7; }
+.orbit { position: absolute; inset: 3%; border: 1px solid #cbd5cc; border-radius: 50%; transform: rotate(-35deg) scaleY(.46); }
+.orbit-two { inset: 18%; transform: rotate(55deg) scaleY(.5); border-color: #e1a48f; }
+.star { position: absolute; top: 48%; left: 45%; color: white; font-size: 2rem; }
+.approach { border-top: 1px solid var(--line); max-width: 1116px; margin: auto; padding: 80px 0 110px; }
+.approach h2 { margin: 0; font-size: clamp(2.3rem, 5vw, 4.5rem); letter-spacing: -.07em; }
+.approach h2 span { color: var(--muted); }
+footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+@media (max-width: 700px) {
+  .site-header, footer { padding: 22px 20px; }
+  nav { gap: 14px; }
+  .hero { grid-template-columns: 1fr; padding: 9vh 20px 12vh; gap: 50px; }
+  .hero-art { width: min(80vw, 360px); }
+  .approach { margin: 0 20px; padding: 55px 0 75px; }
+}

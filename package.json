@@ -1,0 +1,14 @@
+{
+  "name": "autonomy-test",
+  "version": "1.0.0",
+  "description": "A lightweight, responsive landing page built with semantic HTML and plain CSS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node scripts/validate.js",
+    "validate": "node scripts/validate.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
