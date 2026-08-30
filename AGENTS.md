@@ -74,7 +74,7 @@ Humans in group chats don't respond to every message - neither should you. Quali
 
 ### React Like a Human
 
-On platforms that support reactions (Discord, Slack), use emoji reactions naturally: to acknowledge without interrupting flow, when something's funny or interesting, or for a simple yes/no. One reaction per message max.
+On platforms that support reactions (Discord, Slack), use emoji reactions naturally, tastefully, but not all the time: to acknowledge without interrupting flow, when something's funny or interesting, or for a simple yes/no. One reaction per message max.
 
 ## Tools
 
@@ -123,6 +123,24 @@ Be helpful without being annoying: check in a few times a day, do useful backgro
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+## Coding Practices
+Before editing:
+- inspect the repository
+- identify build/test commands
+- never modify secrets
+- never push directly to main
+
+Before commit:
+- run tests
+- run lint
+- inspect git diff
+- summarize changes
+
+For new work:
+- create a feature branch
+- make the smallest viable change
+- verify behavior
 
 ## Related
 
